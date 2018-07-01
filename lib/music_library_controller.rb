@@ -7,9 +7,15 @@ class MusicLibraryController
   def call
     puts "Welcome to your music library!"
     puts "To list all of your songs, enter 'list songs'."
-    input = []
+    input = ""
     until input = 'exit'
       input = gets.strip
+      if input == 'list songs'
+        list_songs
+      end
     end
+  end
+  def list_songs
+
   end
 end
