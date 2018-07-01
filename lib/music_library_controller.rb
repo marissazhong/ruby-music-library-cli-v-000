@@ -25,6 +25,8 @@ class MusicLibraryController
         list_artist
       elsif input == 'list genre'
         list_genre
+      elsif input == 'play song'
+        play_song
       end
     end
   end
@@ -41,6 +43,9 @@ class MusicLibraryController
 
   end
   def list_genre(genre)
+
+  end
+  def play_song(song)
 
   end
 end
