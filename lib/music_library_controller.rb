@@ -20,13 +20,13 @@ class MusicLibraryController
       if input == 'list songs'
         list_songs
       elsif input == 'list artists'
-        list_songs_by_artists
+        list_artists
       elsif input == 'list genres'
-        list_songs_by_genres
+        list_genres
       elsif input == 'list artist'
-        list_artist
+        list_songs_by_artists
       elsif input == 'list genre'
-        list_genre
+        list_songs_by_genres
       elsif input == 'play song'
         play_song
       end
