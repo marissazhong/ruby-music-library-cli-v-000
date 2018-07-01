@@ -45,7 +45,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.strip
     found_artist = Artist.all.select {|artist| artist.name == input}
-    found_artist.songs
+    found_artist[0].songs
   end
   def list_songs_by_genre
 
