@@ -8,7 +8,7 @@ class MusicLibraryController
     puts "Welcome to your music library!"
     input = []
     until input = 'exit'
-      input = gets.strip
+      input << gets.strip
 
     end
   end
