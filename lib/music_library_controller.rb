@@ -55,7 +55,7 @@ class MusicLibraryController
       genre.songs.sort {|x,y| x.name <=> y.name}.each_with_index {|item,i| puts "#{i+1}. #{item.artist.name} - #{item.name}"}
     end
   end
-  def play_song(song)
+  def play_song
     puts "Please choose a song from the list below:"
     list_songs
     input = gets.strip
