@@ -36,6 +36,7 @@ class Artist
 
   def genres
     all_genres = @songs.collect {|song| all_genres << song.genre}
+    all_genres
   end
 
 end
