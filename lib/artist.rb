@@ -35,7 +35,7 @@ class Artist
   end
 
   def genres
-    all_genres = songs.collect {|song| song.genre unless all_genres.include?(song.genre)}
+    all_genres = songs.collect {|song| all_genres << song.genre unless all_genres.include?(song.genre)}
   end
 
 end
