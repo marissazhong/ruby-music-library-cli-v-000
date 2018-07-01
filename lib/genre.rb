@@ -19,7 +19,7 @@ class Genre
   end
 
   def self.create(name)
-    new_song = Genre.new(name)
-    new_song.save
+    new_genre = Genre.new(name)
+    new_genre.save
   end
 end
