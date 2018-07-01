@@ -5,4 +5,10 @@ class MusicImporter
     @file_path = file_path
     @@all << self
   end
+  def files
+    @@all
+  end
+  def self.import
+
+  end
 end
