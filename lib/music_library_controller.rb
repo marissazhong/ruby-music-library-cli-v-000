@@ -58,7 +58,7 @@ class MusicLibraryController
   def play_song
     puts "Please choose a song from the list below:"
     list_songs
-    input = gets.strip
+    input = gets.strip.to_i
     if input > 0 && input < Song.all.length+1
       puts "song playing"
     end
