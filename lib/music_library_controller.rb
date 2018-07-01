@@ -9,7 +9,6 @@ class MusicLibraryController
     input = []
     until input = 'exit'
       input << gets.strip
-
     end
   end
 end
