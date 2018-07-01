@@ -25,7 +25,7 @@ class Song
     new_song
   end
 
-  def name
-    
+  #def name
+
 
 end
