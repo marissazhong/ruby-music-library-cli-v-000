@@ -34,4 +34,10 @@ class Genre
     song.genre = self unless song.genre
   end
 
+  def artists
+    all_artists = []
+    @songs.collect {|song| all_artists << song.artist unless all_artists.include?(song.artist)}
+    all_artists
+  end
+
 end
