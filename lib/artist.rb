@@ -35,7 +35,7 @@ class Artist
   end
 
   def genres
-    all_genres = songs.select {|song| song.genre unless all_genres.include?(genre)}
+    all_genres = songs.select {|song| song.genre unless all_genres.include?(song.genre)}
   end
 
 end
