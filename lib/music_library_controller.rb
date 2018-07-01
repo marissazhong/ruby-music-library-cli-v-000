@@ -52,7 +52,7 @@ class MusicLibraryController
     puts "Please enter the name of a genre:"
     input = gets.strip
     if genre = Genre.find_by_name(input)
-      genre.songs.sort {|x,y| x.name <=> y.name}.each_with_index {|item,i| puts "#{i+1}. #{item.name} - #{item.genre.name}"}
+      genre.songs.sort {|x,y| x.name <=> y.name}.each_with_index {|item,i| puts "#{i+1}. #{item.name} - #{item.artist.name}"}
     end
   end
   def play_song(song)
