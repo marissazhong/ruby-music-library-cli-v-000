@@ -7,6 +7,10 @@ class Artist
     @songs = []
   end
 
+  def songs
+    @songs
+  end
+
   def self.all
     @@all
   end
@@ -30,8 +34,6 @@ class Artist
     song.artist = self unless song.artist
   end
 
-  def songs
-    @songs
-  end
+
 
 end
