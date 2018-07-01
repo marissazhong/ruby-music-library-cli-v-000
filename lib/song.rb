@@ -14,6 +14,15 @@ class Song
     self.all << self
   end
 
+  def self.destroy_all
+    self.all.clear
+  end
+
+  def self.create(name)
+    new_song = Song.new(name)
+    self.save
+  end
+
   
 
 end
