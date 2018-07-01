@@ -8,6 +8,11 @@ class Song
     @artist = artist
   end
 
+  def artist=(artist)
+    @artist = artist
+    artist.add_song(self)
+  end
+
   def self.all
     @@all
   end
@@ -26,9 +31,5 @@ class Song
     new_song
   end
 
-  def artist=(artist)
-    @artist = artist
-    artist.add_song(self)
-  end
 
 end
