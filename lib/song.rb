@@ -44,4 +44,12 @@ class Song
   def self.find_or_create_by_name(name)
     find_by_name(name) ? find_by_name(name) : create(name)
   end
+
+  def self.new_from_filename(name)
+
+  end
+
+  def self.create_from_filename(name)
+
+  end
 end
