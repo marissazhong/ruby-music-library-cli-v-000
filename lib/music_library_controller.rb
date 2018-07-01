@@ -20,7 +20,7 @@ class MusicLibraryController
       if input == 'list songs'
         list_songs
       elsif input == 'list artists'
-        list_artists
+        list_songs_by_artists
       elsif input == 'list genres'
         list_genres
       elsif input == 'list artist'
@@ -35,7 +35,7 @@ class MusicLibraryController
   def list_songs
 
   end
-  def list_artists
+  def list_songs_by_artists
 
   end
   def list_genres
