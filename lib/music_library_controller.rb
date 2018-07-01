@@ -6,10 +6,10 @@ class MusicLibraryController
   end
   def call
     puts "Welcome to your music library!"
-    input = ""
+    input = []
     until input = 'exit'
       input = gets.strip
-      
+
     end
   end
 end
