@@ -60,7 +60,7 @@ class MusicLibraryController
     list_songs
     input = gets.strip
     if input > 0 && input < Song.all.length+1
-
+      puts "song playing"
     end
   end
 end
