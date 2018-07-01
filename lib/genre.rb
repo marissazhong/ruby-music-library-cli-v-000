@@ -11,7 +11,7 @@ class Genre
   end
 
   def save
-    self.all << self
+    @@all << self
   end
 
   def self.destroy_all
