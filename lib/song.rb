@@ -37,7 +37,7 @@ class Song
     new_song
   end
 
-  def find_by_name(name)
-    @@all
+  def self.find_by_name(name)
+    @@all.select {}
   end
 end
