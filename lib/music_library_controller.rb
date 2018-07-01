@@ -59,6 +59,6 @@ class MusicLibraryController
     puts "Please choose a song from the list below:"
     list_songs
     input = gets.strip
-    if
+    if input > 0 && input < Song.all.length+1
   end
 end
