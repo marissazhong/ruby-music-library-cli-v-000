@@ -38,6 +38,6 @@ class Song
   end
 
   def self.find_by_name(name)
-    @@all.select {}
+    self.all.select {}
   end
 end
